@@ -8,12 +8,9 @@ int main(void)
 {
 	char c = 'a';
 
-	while (c <= '2')
+	while (c <= 'z')
 	{
-		if (c != 'e' && c != 'z')
-		{
-			putchar(c);
-		}
+		putchar(c);
 		c++;
 	}
 	putchar('\n');
