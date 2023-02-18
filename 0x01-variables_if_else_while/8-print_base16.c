@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 /**
  * main -  prints all the numbers of base 16 in lowercase
@@ -7,14 +6,16 @@
  */
 int main(void)
 {
-	char c = 'z';
+	char ch;
 
-	while (c >= 'a')
+	for (ch = '0'; ch <= '9'; ch++)
 	{
-		putchar(c);
-		c--;
+		putchar(ch);
 	}
-
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
 	return (0);
 }
